@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+  border-style: none;
+  width: 7rem;
+  margin: 1rem 0px;
+  border-radius: 2rem;
+  padding: 0.7rem  1rem;
+  color: white;
+  background-color: #FDCE0D;
+  font-weight: bold;
+  transition: .2s ease-in;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+button:active {
+  opacity: .8;
+  transform: scale(0.9);
+}
+
+input {
+  border-style: none;
+  font-size: 1rem;
+  border-radius: 2rem;
+  padding: .5rem;
+}
+
+textarea {
+  border-radius: 1.5rem;
+  padding: .5rem;
+  resize: none;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 0.2rem solid #FDCE0D;
+  opacity: .95;
+}
+
+textarea:focus {
+  outline: none;
+  opacity: .95;
+  border-bottom: .2rem solid #FDCE0D;
+}
+
+header {
+  background-color: black;
+  height: 100vh;
+  border-bottom: 0.4rem #FDCE0D solid;
+}
+
+header div {
+  height: 100%;
+}
+
+@media (min-width: 43.75em) {
+  header div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+header .avatar {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .avatar .yellow {
+  width: 11rem;
+  height: 11rem;
+  background-color: #FDCE0D;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .avatar .yellow .inner {
+  width: 10rem;
+  height: 10rem;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 0.03rem 0.15rem 5px rgba(167, 167, 167, 0.582);
+}
+
+header .profile {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media (min-width: 43.75em) {
+  header .profile {
+    height: 80%;
+  }
+}
+
+header .profile div {
+  padding: 2rem;
+  height: auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 43.75em) {
+  header .profile div {
+    align-items: flex-start;
+  }
+}
+
+header .profile div h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+@media (min-width: 43.75em) {
+  header .profile div h1 {
+    text-align: start;
+  }
+}
+
+header .profile div h1 .color {
+  color: #FDCE0D;
+}
+
+header .profile div p {
+  text-align: center;
+}
+
+@media (min-width: 43.75em) {
+  header .profile div p {
+    text-align: start;
+  }
+}
+
+@media (min-width: 80em) {
+  header .profile div p {
+    font-size: 1.5rem;
+  }
+}
+
+header .profile div button {
+  margin-top: 1rem;
+  background-color: #FDCE0D;
+}
+
+header .profile div button a {
+  color: black;
+}
+
+main {
+  min-height: 100vh;
+  background-color: #F9F9F9;
+}
+
+main .scont {
+  padding: 2rem .5rem;
+}
+
+main .scont .skills {
+  min-height: 10rem;
+}
+
+@media (min-width: 70em) {
+  main .scont .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+main .scont .skills .sechead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .scont .skills .sechead h2 {
+  padding: .3rem 1rem;
+  border-bottom: 0.2rem solid #FDCE0D;
+}
+
+main .scont .skills .card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 43.75em) {
+  main .scont .skills .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media (min-width: 70em) {
+  main .scont .skills .card-container {
+    width: 60%;
+  }
+}
+
+main .card {
+  width: 20rem;
+  background-color: white;
+  margin: 1rem 0;
+  min-height: 20rem;
+  border-radius: 2rem;
+  box-shadow: 0.03rem 0.15rem 5px rgba(167, 167, 167, 0.582);
+}
+
+main .card .chead {
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: .2rem solid #444;
+}
+
+main .card .chead .icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background-color: #666;
+}
+
+main .card .chead h3 {
+  margin-top: .5rem;
+}
+
+main .card .cbody {
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .card .cbody h4 {
+  margin-bottom: .5rem;
+}
+
+main .card .cbody p {
+  width: 60%;
+  text-align: center;
+}
+
+/* This is to load the different pictures*/
+#hnglogo {
+  background-image: url("../pictures/hnglogo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#sagicam {
+  background-image: url("../pictures/sagicam.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#profile {
+  background-image: url("../pictures/profile.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#frontend {
+  background-image: url("../pictures/frontend.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#backend {
+  background-image: url("../pictures/backend.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contact {
+  height: 100vh;
+  background-color: #FDCE0D;
+  border-top: .4rem solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .cform {
+  margin-top: 3rem;
+  background-color: black;
+  width: 20rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+.contact .cform h2 {
+  color: white;
+  text-align: center;
+}
+
+.contact .cform form input {
+  width: 100%;
+}
+
+.contact .cform form .input-div {
+  margin: 1rem 0;
+}
+
+.contact .cform form textarea {
+  width: 100%;
+}
+
+.contact .cform form .mailbtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .cform form .mailbtn button {
+  background-color: black;
+  color: #FDCE0D;
+  border: 0.2rem solid #FDCE0D;
+}
+
+.contact .cform form .mailbtn button:hover {
+  border-style: none;
+  background-color: #FDCE0D;
+  opacity: 1;
+  color: black;
+}
+
+.contact .cform form .mailbtn button:active {
+  border-style: none;
+  background-color: #FDCE0D;
+  opacity: 1;
+  color: black;
+}
+
+footer {
+  height: 2.5rem;
+  background-color: black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: .5rem;
+}
+
+footer h4 {
+  color: white;
+  text-align: center;
+}
